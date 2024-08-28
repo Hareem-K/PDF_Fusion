@@ -1,0 +1,51 @@
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-item .active {
+    border-bottom: 2px solid black; /* Underline the active link */
+    font-weight: bold;
+  }
+
+  /* Custom styles for navbar */
+.navbar-nav {
+    margin-left: auto; /* Pushes nav items to the right */
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-nav .nav-item .nav-link.active {
+    border-bottom: 2px solid black; /* Underline the active link */
+    font-weight: bold;
+  }
+  
+  /* Logo specific styles */
+  .logo-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0; /* Remove padding to avoid styling like other links */
+  }
+  
+  
+  .logo-link:hover {
+    text-decoration: none; /* Ensure it doesn't get underlined on hover */
+    color: black; /* Keep the color consistent */
+  }
+  
