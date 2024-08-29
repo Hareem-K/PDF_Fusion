@@ -26,12 +26,12 @@ function Footer() {
               <i class="bi bi-envelope"></i>
             </Link>
             <Link
-              class='social-icon-link linkedin'
+              className='social-icon-link linkedin'
               to='https://www.linkedin.com/in/hareemzkhan'
               target='_blank'
               aria-label='LinkedIn'
             >
-              <i class="bi bi-linkedin"></i>
+              <i className="bi bi-linkedin"></i>
             </Link>
             <Link
               className='social-icon-link github'
@@ -39,7 +39,7 @@ function Footer() {
               target='_blank'
               aria-label='GitHub'
             >
-              <i class="bi bi-github"></i>
+              <i className="bi bi-github"></i>
             </Link>
         </div>
 
