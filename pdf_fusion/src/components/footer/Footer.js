@@ -35,7 +35,7 @@ function Footer() {
             </Link>
             <Link
               className='social-icon-link github'
-              to='https://github.com/Hareem-K'
+              to='https://github.com/Hareem-K/PDF_Fusion'
               target='_blank'
               aria-label='GitHub'
             >

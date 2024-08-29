@@ -1,0 +1,22 @@
+.annotate {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.annotate_title {
+    color: var(--darkgreen);
+}
+
+.annotate_description {
+    color: var(--darkgreen);
+    font-size: 16px;
+}
+
+.annotate-photo {
+    width: 450px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    margin-top: 20px; /* Adds space above the image */
+    max-width: 100%; /* Ensure it doesn't exceed the container's width */
+}
+

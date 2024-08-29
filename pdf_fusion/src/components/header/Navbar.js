@@ -4,8 +4,8 @@ import './Navbar.css';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container">
+    <nav className="navbar navbar-expand-lg navbar-light">
+      <div className="container navbar-container">
         <NavLink to="/" className="navbar-brand logo-link">
           PDF Fusion <i className="bi bi-file-earmark-pdf"></i>
         </NavLink>

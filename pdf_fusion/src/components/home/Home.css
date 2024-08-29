@@ -1,6 +1,19 @@
-/* Check for any styles that might hide the text */
-p {
-    color: black;
+.home {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.home_title {
+    color: var(--darkgreen);
+}
+
+.home_description {
+    color: var(--darkgreen);
     font-size: 16px;
-  }
+}
   
+.home-photo {
+    max-width: 100%; /* Make sure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}

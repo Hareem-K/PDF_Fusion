@@ -1,51 +1,68 @@
+/* Navbar background color */
+.navbar {
+    background-color: var(--lightmediumgreen);
+    border-bottom: 1px solid var(--mediumgreen); /* Border color */
+}
+
+/* Navbar list styling */
 .navbar ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     gap: 20px;
-  }
-  
-  .navbar ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-  }
-  
-  .nav-item .active {
-    border-bottom: 2px solid black; /* Underline the active link */
-    font-weight: bold;
-  }
+}
 
-  /* Custom styles for navbar */
+/* Align nav items to the right */
 .navbar-nav {
     margin-left: auto; /* Pushes nav items to the right */
-  }
-  
-  .navbar-nav .nav-item .nav-link {
+}
+
+/* Style for navbar links */
+.navbar-nav .nav-item .nav-link {
     text-decoration: none;
-    color: black;
+    color: var(--darkgreen); /* Default color for links */
     padding: 10px 20px;
-    transition: all 0.3s ease;
-  }
-  
-  .navbar-nav .nav-item .nav-link.active {
-    border-bottom: 2px solid black; /* Underline the active link */
+    font-weight: 600;
+    position: relative; /* Necessary for the pseudo-element */
+    margin-left: 2rem;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Sliding border effect */
+.navbar-nav .nav-item .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--darkgreen); /* Color of the sliding border */
+    transform: scaleX(0); /* Initially hides the pseudo-element by scaling it horizontally to 0 */
+    transform-origin: bottom left; /* Slide from left to right */
+    transition: transform 0.3s ease; /* Sliding effect */
+}
+
+/* Style for active links */
+.navbar-nav .nav-item .nav-link.active {
+    color: var(--darkgreen); /* Color of active links */
     font-weight: bold;
-  }
-  
-  /* Logo specific styles */
-  .logo-link {
+}
+
+.navbar-nav .nav-item .nav-link.active::after {
+    transform: scaleX(1); /* Slide in effect */
+}
+
+/* Logo specific styles */
+.logo-link {
     text-decoration: none;
-    color: black;
+    color: var(--darkgreen) !important; /* Same color as nav links */
     font-size: 1.5rem;
     font-weight: bold;
     padding: 0; /* Remove padding to avoid styling like other links */
-  }
-  
-  
-  .logo-link:hover {
+}
+
+/* Logo hover effect */
+.logo-link:hover {
     text-decoration: none; /* Ensure it doesn't get underlined on hover */
-    color: black; /* Keep the color consistent */
-  }
-  
+    color: var(--darkgreen); /* Keep the color consistent */
+}

@@ -5,7 +5,7 @@ html, body {
   }
   
   .footer-container {
-    background-color: #333;
+    background-color: var(--darkgreen);
     padding: 1rem 0; /* Reduced padding */
     position: fixed;
     bottom: 0;
@@ -39,20 +39,20 @@ html, body {
   }
   
   .footer-link-items a {
-    color: #FFF;
+    color: var(--lightgreen);
     text-decoration: none;
     margin: 0 3.5rem; /* Space between links */
   }
   
   .footer-link-items a:hover {
-    color: #FFF;
+    color: var(--lightgreen);
     transition: 0.3s ease-out;
   }
 
 
 /* social icons */
 .social-icon-link {
-    color: #FFF;
+    color: var(--lightgreen);
     font-size: 24px;
 }
 .social-media {
@@ -76,7 +76,7 @@ html, body {
 }
 
 .website-rights {
-    color: #FFF;
+    color: var(--lightgreen);
     margin-top: 1rem; /* Increased margin-top for more space above */
     margin-bottom: 0; /* Remove bottom margin */
 }

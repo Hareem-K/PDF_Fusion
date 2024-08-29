@@ -1,0 +1,18 @@
+.merge {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.merge_title {
+    color: var(--darkgreen);
+}
+
+.merge_description {
+    color: var(--darkgreen);
+    font-size: 16px;
+}
+
+.merge-photo {
+    max-width: 100%; /* Make sure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
