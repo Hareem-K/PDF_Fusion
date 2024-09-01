@@ -1,22 +1,82 @@
 .annotate {
     text-align: center;
-    margin-top: 3%;
-}
-
-.annotate_title {
+  }
+  
+  .annotate_title {
     color: var(--darkgreen);
-}
-
-.annotate_description {
+  }
+  
+  .annotate_description {
     color: var(--darkgreen);
     font-size: 16px;
-}
-
-.annotate-photo {
-    width: 450px; /* Set a fixed width */
+  }
+  
+  .annotate-photo {
+    width: 370px; /* Set a fixed width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Optional: Adds rounded corners */
     margin-top: 20px; /* Adds space above the image */
     max-width: 100%; /* Ensure it doesn't exceed the container's width */
-}
-
+  }
+  
+  .file-dropzone {
+    border: 2px dashed var(--mediumgreen);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .file-dropzone:hover {
+    border-color: var(--darkgreen);
+  }
+  
+  .file-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    color: var(--darkgreen);
+  }
+  
+  .file-list li {
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .remove-file-button {
+    background: none;
+    border: none;
+    color: var(--darkgreen);
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .remove-file-button:hover {
+    color: var(--mediumgreen);
+  }
+  
+  .annotate-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--darkgreen);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .annotate-button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  .annotate-button:hover:enabled {
+    background-color: var(--mediumgreen);
+  }
+  

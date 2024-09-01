@@ -1,18 +1,84 @@
 .merge {
     text-align: center;
     margin-top: 5%;
-}
-
-.merge_title {
+  }
+  
+  .merge_title {
     color: var(--darkgreen);
-}
-
-.merge_description {
+  }
+  
+  .merge_description {
     color: var(--darkgreen);
     font-size: 16px;
-}
-
-.merge-photo {
+  }
+  
+  .merge-photo {
     max-width: 100%; /* Make sure the image is responsive */
     height: auto; /* Maintain aspect ratio */
-}
+  }
+  
+  .file-dropzone {
+    border: 2px dashed var(--mediumgreen);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .file-dropzone:hover {
+    border-color: var(--darkgreen);
+  }
+  
+  .file-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    color: var(--darkgreen);
+    max-height: 150px; /* Limit the height of the list */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+    border: 1px solid var(--mediumgreen); /* Optional: Add a border around the list */
+    padding-right: 10px; /* Provide space for the scrollbar */
+  }
+  
+  .file-list li {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .remove-file-button {
+    background: none;
+    border: none;
+    color: var(--darkgreen);
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .remove-file-button:hover {
+    color: var(--mediumgreen);
+  }
+  
+  .merge-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--darkgreen);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .merge-button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  .merge-button:hover:enabled {
+    background-color: var(--mediumgreen);
+  }
+  
